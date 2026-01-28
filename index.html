@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueStar Company - Products & Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Pop-up Modal for Offers -->
+    <div id="offerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Special Offer!</h2>
+            <p>Get 20% off on all AC services this month! Limited time only.</p>
+            <button onclick="closeModal()">Claim Offer</button>
+        </div>
+    </div>
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Service costs : </h2>
+            <p>AC Repair : Rs.600/- + GST.</p>
+            <p>AC Service : Rs.500/- + GST.</p>
+            <p>Fridge Service: Rs.550/- +GST</p>
+            <p>Installation: Rs.1500/- +GST</p>
+            <p>Visiting charges applicable after 1 year product warranty.</p>
+            <p>Gas refilling charges are not covered under warranty also , if physical damage found.</p>
+            <a href="#contact" style="text-decoration: none; color: #fff;"><button class="bookBtn" onclick="closeModal()">Book Appointment</button></a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>BlueStar</h1>
+            <p>Built-on Trust</p>
+        </div>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#service" onclick="openCharges()">Service Charges</a>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-category">
+            <h3>Air Conditioners</h3>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://www.atlasaircons.com/wp-content/uploads/2018/02/Latest-Blue-Star-Multi-Inverter-Split-AC-850x500.jpg"
+                        alt="AC Unit" width="200" height="150">
+                    <h4>Split AC</h4>
+                    <p>Energy-efficient cooling. Service Cost: Rs.600</p>
+                    <span class="price">Rs.30000</span>
+                </div>
+                <div class="product">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.1zvezePd6LLG7Pr1y2GMnAHaF7?pid=Api&P=0&h=220"
+                        alt="Window AC" width="200" height="150">
+                    <h4>Window AC</h4>
+                    <p>Compact and powerful. Service Cost: Rs.500</p>
+                    <span class="price">Rs.20000</span>
+                </div>
+                <div class="product">
+                    <img src="https://www.atlasaircons.com/wp-content/uploads/2018/02/Latest-Blue-Star-Multi-Inverter-Split-AC-850x500.jpg"
+                        alt="AC Unit" width="200" height="150">
+                    <h4>Split AC</h4>
+                    <p>Energy-efficient cooling. Service Cost: Rs.600</p>
+                    <span class="price">Rs.30000</span>
+                </div>
+                <div class="product">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.1zvezePd6LLG7Pr1y2GMnAHaF7?pid=Api&P=0&h=220"
+                        alt="Window AC" width="200" height="150">
+                    <h4>Window AC</h4>
+                    <p>Compact and powerful. Service Cost: Rs.500</p>
+                    <span class="price">Rs.20000</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-category">
+            <h3>Refrigerators</h3>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP._jpWNOaYDM5jDI7tmV36_wHaHa?pid=Api&P=0&h=220"
+                        alt="Refrigerator" width="200" height="150">
+                    <h4>Double Door Fridge</h4>
+                    <p>Large capacity. Service Cost: Rs.650</p>
+                    <span class="price">Rs.15000</span>
+                </div>
+                <div class="product">
+                    <img src="https://aje.mv/wp-content/uploads/2023/05/blue-star-150l-glass-top-fod.png"
+                        alt="Refrigerator" width="200" height="150">
+                    <h4>Glass Top Fridge</h4>
+                    <p>Large capacity. Service Cost: Rs.650</p>
+                    <span class="price">Rs.15000</span>
+                </div>
+                <div class="product">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.kpWy_9-LXnfojof563PRFgHaFx?pid=Api&P=0&h=220"
+                        alt="Refrigerator" width="200" height="150">
+                    <h4>Visi-Coolar Fridge</h4>
+                    <p>Large capacity. Service Cost: Rs.650</p>
+                    <span class="price">Rs.15000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>BlueStar Company specializes in home appliances and services. Founded in 2010, we provide top-quality
+            products and reliable technician visits. Contact us for all your needs!</p>
+        <ul>
+            <li>Address: 123 Main St, City, India</li>
+            <li>Phone: +1-234-567-890</li>
+            <li>Email: info@bluestar.com</li>
+        </ul>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"Excellent service! Technician arrived on time." - John D.</p>
+        </div>
+        <div class="review">
+            <p>"Great products at affordable prices." - Jane S.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2 style="text-align: center; padding-bottom: 50px;">Book a Technician Visit</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter Phone Number Only" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Enter your address with prefer Date and Time" required></textarea>
+
+            <label for="service">Service Needed:</label>
+            <select id="serviceType" required>
+                <option value="AC Repair">AC Repair</option>
+                <option value="AC Service">AC Service</option>
+                <option value="Fridge Service">Fridge Service</option>
+                <option value="Installation">Installation</option>
+            </select>
+
+            <button type="submit">Submit & Send to WhatsApp</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Teja Munikrihsna Geddam. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
