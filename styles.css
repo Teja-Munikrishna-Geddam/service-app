@@ -48,11 +48,11 @@ header div p {
 }
 nav a {
     color: white;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     text-decoration: none;
     position: relative;
     right: 100px;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 
