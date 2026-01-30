@@ -46,7 +46,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     
     // Construct WhatsApp message including cost
     const message = `New Technician Request:\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nService: ${service}\nEstimated Cost: ${cost}`;
-    const whatsappUrl = `https://wa.me/8828491981?text=${encodeURIComponent(message)}`; // Replace 1234567890 with your number
+    const whatsappUrl = `https://wa.me/+918828491981?text=${encodeURIComponent(message)}`; // Replace 1234567890 with your number
     
     // Open WhatsApp
     window.open(whatsappUrl, '_blank');
